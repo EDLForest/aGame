@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="stat1" class="main.java.Agents.Statistics">
+        <property name="strength" value="10"/>
+        <property name="Constitution" value="10"/>
+        <property name="Intelligence" value="10"/>
+        <property name="agility" value="10"/>
+        <property name="wisdom" value="10"/>
+    </bean>
+
+    <bean id="aby1" class="main.java.Agents.Ability">
+        <property name="name" value="BlueFlame"/>
+    </bean>
+    <bean id="aby2" class="main.java.Agents.Ability">
+        <property name="name" value="CryofTheBanshee"/>
+    </bean>
+    <bean id="aby3" class="main.java.Agents.Ability">
+        <property name="name" value="ImpactShield"/>
+    </bean>
+
+    <bean id="mvSet1" class="main.java.Agents.MoveSet">
+        <constructor-arg>
+            <list>
+                <ref bean="aby1"/>
+                <ref bean="aby2"/>
+                <ref bean="aby3"/>
+            </list>
+        </constructor-arg>
+    </bean>
+
+    <bean id="agt" class = "main.java.Agents.Player">
+        <property name="name" value="Nathan"/>
+        <property name="stats" ref="stat1"/>
+        <property name="attribute" value="NORMAL"/>
+        <property name="moveSet" ref="mvSet1"/>
+    </bean>
+</beans>
