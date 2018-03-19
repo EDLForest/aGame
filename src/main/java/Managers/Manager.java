@@ -81,6 +81,7 @@ public abstract class Manager {
 
     }
     abstract void update(Action nextAction);
+
     abstract void display();
 
 

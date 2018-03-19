@@ -38,7 +38,7 @@ public class BattleManager extends Manager{
     @Override
     public void update(Action nextAction) {
         System.out.println(nextAction);     //use toString() to display the Action to players
-
+        nextAction.execute();
 
 
     }

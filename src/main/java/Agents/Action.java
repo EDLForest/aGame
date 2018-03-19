@@ -24,4 +24,5 @@ package main.java.Agents;
 
 public abstract class Action {
 
+    public abstract void execute();
 }

@@ -28,7 +28,7 @@ public class MainManager extends Manager{
     }
 
     @Override
-    public void update() {
+    public void update(Action nextAction) {
 
     }
 
