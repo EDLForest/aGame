@@ -23,4 +23,5 @@ package main.java.Agents;
  */
 
 public abstract class Action {
+
 }

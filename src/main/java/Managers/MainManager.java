@@ -1,6 +1,10 @@
 package main.java.Managers;
 
 import main.java.Agents.Action;
+import main.java.Agents.Agent;
+
+import java.util.ArrayList;
+import java.util.Iterator;
 
 
 /**
@@ -13,13 +17,13 @@ import main.java.Agents.Action;
  * a battle loop thread will be spawned and this thread will be managed by a
  * battle manager. The main game loop shall be halted until the battle loop resolves
  * Essentially, the function of the main game loop is to trigger other game loops.
+ *
  */
-public class MainManager implements Manager{
+public class MainManager extends Manager{
 
 
-
-    @Override
     public Action getNextAction() {
+
         return null;
     }
 
