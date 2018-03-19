@@ -35,10 +35,10 @@ import java.util.*;
 public abstract class Manager {
 
     //An arrayList of agents, whose action will affect the state of the game
-    ArrayList<Agent> agents;
-    Iterator<Agent> agentIterator;
+    private ArrayList<Agent> agents;
+    private Iterator<Agent> agentIterator;
 
-    InputHandler inputHandler;
+    private InputHandler inputHandler;
 
     public Manager(){
         agents = new ArrayList<>();
@@ -71,10 +71,16 @@ public abstract class Manager {
         else
             //TODO: If the agent is not a player, get an AI action
             nextAction = null;
+
+        //If the Iterator is at the end of the List, Create a new one that
+        // points to the top of the list.
+        if(!agentIterator.hasNext())
+            agentIterator = agents.iterator();
+
         return nextAction;
 
     }
-    abstract void update();
+    abstract void update(Action nextAction);
     abstract void display();
 
 

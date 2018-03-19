@@ -24,13 +24,6 @@ public class BattleManager extends Manager{
         current = 0;
     }
 
-//    @Override
-//    public Action getNextAction() {
-//
-////        current = (current++)%agents.size(); //Index
-//        return null;
-//    }
-
     /**
      * Update the state of the game, including Agents' stats,
      * environment, etc.
@@ -43,11 +36,11 @@ public class BattleManager extends Manager{
      * to correctly reflect the
      */
     @Override
-    public void update() {
+    public void update(Action nextAction) {
+        System.out.println(nextAction);     //use toString() to display the Action to players
 
 
-//        if(current == 0)
-//            resort the Agent ArrayList
+
     }
 
     /**
