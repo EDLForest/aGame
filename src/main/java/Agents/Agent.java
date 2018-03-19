@@ -23,7 +23,6 @@ public abstract class Agent {
     private Statistics stats;
     private MoveSet moveSet;
     private boolean isPlayer;
-    private InputHandler inputHandler;
 
     public Agent.attribute getAttribute() {
         return attribute;

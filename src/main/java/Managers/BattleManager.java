@@ -6,7 +6,7 @@ import main.java.Agents.Agent;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BattleManager implements Manager{
+public class BattleManager extends Manager{
 
     ArrayList<Agent> agents;
     int current;
@@ -24,18 +24,12 @@ public class BattleManager implements Manager{
         current = 0;
     }
 
-    /**
-     * Obtain the next action from the current Agent playing
-     * If the agent is a player, query action from the player
-     * If the agent is a NPC, use an AI to decide its action
-     * @return Action of the Current Agent
-     */
-    @Override
-    public Action getNextAction() {
-
-//        current = (current++)%agents.size(); //Index
-        return null;
-    }
+//    @Override
+//    public Action getNextAction() {
+//
+////        current = (current++)%agents.size(); //Index
+//        return null;
+//    }
 
     /**
      * Update the state of the game, including Agents' stats,

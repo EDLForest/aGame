@@ -57,6 +57,18 @@ class BattleInputHandler extends InputHandler{
 
     @Override
     public Action getUserAction() {
+        System.out.println("1. Attack");
+        System.out.println("2. Defense");
+        System.out.println("3. Items");
+        System.out.println("4. Run");
+
+        int input = userIn.nextInt();
+
+        switch(input){
+            case(1):
+
+        }
+
         return null;
     }
 }

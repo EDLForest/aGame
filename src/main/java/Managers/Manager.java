@@ -46,7 +46,12 @@ public abstract class Manager {
         inputHandler = InputHandler.getBattleInputHandler();
     }
 
-    //Use Iterator to cycle through the List of agents and query their next action
+    /**
+     * Obtain the next action from the current Agent playing
+     * If the agent is a player, query action from the player
+     * If the agent is a NPC, use an AI to decide its action
+     * @return Action of the Current Agent
+     */
     public Action getNextAction(){
         Action nextAction;
 
@@ -57,11 +62,14 @@ public abstract class Manager {
         }
 
         Agent current = agentIterator.next();
-        System.out.println("Current agent is: " + current.getName() + ".");
-        if (current.isPlayer())
+        System.out.println("It is " + current.getName() + "'s turn.");
+
+        if (current.isPlayer()) {
+            System.out.println("What does " + current.getName() + " do?");
             nextAction = inputHandler.getUserAction();
+        }
         else
-            //If the agent is not a player, get an AI action
+            //TODO: If the agent is not a player, get an AI action
             nextAction = null;
         return nextAction;
 
