@@ -1,6 +1,6 @@
-package main.java.Utils;
+package com.edlforest.Game.Utils;
 
-import main.java.Agents.Agent;
+import com.edlforest.Game.Agents.Agent;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package main.java.Agents;
+package com.edlforest.Game.Agents;
 
 public class Ability {
 

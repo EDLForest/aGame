@@ -1,4 +1,4 @@
-package main.java.Agents;
+package com.edlforest.Game.Agents;
 
 /**
  * An Agent is an entity that is capable of making various choices and actions

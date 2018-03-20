@@ -1,8 +1,5 @@
-package main.java.Agents;
+package com.edlforest.Game.Agents;
 
-
-import javafx.scene.layout.Background;
-import main.java.Managers.BattleManager;
 
 import java.util.Scanner;
 
