@@ -1,15 +1,14 @@
 package main.java.Agents;
 
 
-import javafx.scene.layout.Background;
-import main.java.Managers.BattleManager;
+import main.java.Agents.Abilities.Action;
 
 import java.util.Scanner;
 
 /**
  * InputHandler is responsible for obtaining the raw input from the player
  * and then translate these raw input, such as numbered choices, arrow keys, etc.
- * into Actions understandable by the program, such as Attack, Run, Item, etc.
+ * into Abilities understandable by the program, such as Attack, Run, Item, etc.
  * What the InputHandler needs to do is:
  *      -Wait fot getAction request from Manager
  *      -Prompt the player
@@ -22,10 +21,7 @@ import java.util.Scanner;
  * All it does is the things mentioned above.
  *
  *
- * For now, the InputHandler will be interfacing with the Standard System input
- * for the player input. But in the future, when there can be multiple party involved
- * in the game, we will need to interface the InputHandler to possibly network sockets
- * which linked to different players.
+ * InputHandler Will be taking in inputs from gui buttons.
  *
  * Need to tackle the problem of prompting the user. and how to interpret the input from player
  * under different situation. For example, during battle loop, the arrow key works differently
@@ -61,13 +57,6 @@ class BattleInputHandler extends InputHandler{
         System.out.println("2. Defense");
         System.out.println("3. Items");
         System.out.println("4. Run");
-
-        int input = userIn.nextInt();
-
-        switch(input){
-            case(1):
-
-        }
 
         return null;
     }

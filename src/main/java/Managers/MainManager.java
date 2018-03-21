@@ -1,10 +1,6 @@
 package main.java.Managers;
 
-import main.java.Agents.Action;
-import main.java.Agents.Agent;
-
-import java.util.ArrayList;
-import java.util.Iterator;
+import main.java.Agents.Abilities.Action;
 
 
 /**

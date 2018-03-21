@@ -1,6 +1,6 @@
 package main.java.Agents;
 
-import main.java.Agents.Ability;
+import main.java.Agents.Abilities.Ability;
 
 import java.util.ArrayList;
 import java.util.List;

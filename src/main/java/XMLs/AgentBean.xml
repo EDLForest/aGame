@@ -3,7 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="stat1" class="main.java.Agents.Statistics">
+    <bean id="stat1" class="main.java.Agents.Characteristics.Statistics">
         <property name="strength" value="10"/>
         <property name="Constitution" value="10"/>
         <property name="Intelligence" value="10"/>
@@ -11,13 +11,13 @@
         <property name="wisdom" value="10"/>
     </bean>
 
-    <bean id="aby1" class="main.java.Agents.Ability">
+    <bean id="aby1" class="main.java.Agents.Abilities.Ability">
         <property name="name" value="BlueFlame"/>
     </bean>
-    <bean id="aby2" class="main.java.Agents.Ability">
+    <bean id="aby2" class="main.java.Agents.Abilities.Ability">
         <property name="name" value="CryofTheBanshee"/>
     </bean>
-    <bean id="aby3" class="main.java.Agents.Ability">
+    <bean id="aby3" class="main.java.Agents.Abilities.Ability">
         <property name="name" value="ImpactShield"/>
     </bean>
 

@@ -1,10 +1,9 @@
 package main.java.Managers;
 
-import main.java.Agents.Action;
+import main.java.Agents.Abilities.Action;
 import main.java.Agents.Agent;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class BattleManager extends Manager{
 

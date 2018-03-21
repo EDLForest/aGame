@@ -1,6 +1,5 @@
-package main.java.Agents.Actions;
+package main.java.Agents.Abilities;
 
-import main.java.Agents.Ability;
 import main.java.Agents.Agent;
 
 public class Attack extends Action {
@@ -9,8 +8,11 @@ public class Attack extends Action {
     private Agent target;
     private Ability ability;
 
+    /**
+     * Simply reduce the HP by the damage of the ability for now
+     */
     @Override
     public void execute() {
-        targer.
+        target.setHP(target.getHP()- ((DamagingAbility)ability).getDamage());
     }
 }

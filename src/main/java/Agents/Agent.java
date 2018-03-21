@@ -1,5 +1,7 @@
 package main.java.Agents;
 
+import main.java.Agents.Characteristics.Statistics;
+
 /**
  * An Agent is an entity that is capable of making various choices and actions
  * during the game play. Agent can be controlled by a human player or an AI.
@@ -13,24 +15,12 @@ package main.java.Agents;
  */
 public abstract class Agent {
 
-    enum attribute {
-        NORMAL, WIND, FIRE, WATER,
-        EARTH, ELECTRIC, LIGHT, DARK
-    }
-
-    private attribute attribute;
+    private int HP;
     private String name;
     private Statistics stats;
     private MoveSet moveSet;
     private boolean isPlayer;
 
-    public Agent.attribute getAttribute() {
-        return attribute;
-    }
-
-    public void setAttribute(Agent.attribute attribute) {
-        this.attribute = attribute;
-    }
 
     public String getName() {
         return name;
@@ -38,6 +28,14 @@ public abstract class Agent {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public int getHP() {
+        return HP;
+    }
+
+    public void setHP(int HP) {
+        this.HP = HP;
     }
 
     public Statistics getStats() {
@@ -67,10 +65,10 @@ public abstract class Agent {
     @Override
     public String toString() {
         return "Agent{" +
-                "attribute=" + attribute +
-                ", name='" + name + '\'' +
+                "name='" + name + '\'' +
                 ", stats=" + stats +
                 ", moveSet=" + moveSet +
+                ", isPlayer=" + isPlayer +
                 '}';
     }
 }

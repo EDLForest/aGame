@@ -1,4 +1,4 @@
-package main.java.Agents;
+package main.java.Agents.Characteristics;
 
 public class Statistics {
     private int Strength;

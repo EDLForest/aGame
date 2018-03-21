@@ -1,35 +1,25 @@
-package main.java.Agents;
+package main.java.Agents.Abilities;
 
-public class Ability {
+public abstract class Ability {
 
-    enum Type {
-        PhysicalDamaging,
-        MagicalDamaging,
-        Healing,
-        StatusAffect
-    }
-
-    private Type abilityType;
     private String name;
+    private int cost;
 
-    public Type getAbilityType() {
-        return abilityType;
+    public int getCost() {
+        return cost;
     }
 
-    public void setAbilityType(Type abilityType) {
-        this.abilityType = abilityType;
+    public void setCost(int cost) {
+        this.cost = cost;
     }
 
     public String getName() {
         return name;
+
     }
 
     public void setName(String name) {
         this.name = name;
     }
 
-    @Override
-    public String toString() {
-        return name;
-    }
 }
