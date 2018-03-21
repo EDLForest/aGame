@@ -1,8 +1,8 @@
-package main.java.Managers;
+package com.edlforest.Game.Managers;
 
-import main.java.Agents.Abilities.Action;
-import main.java.Agents.Agent;
-import main.java.Agents.InputHandler;
+import com.edlforest.Game.Agents.Action;
+import com.edlforest.Game.Agents.Agent;
+import com.edlforest.Game.Agents.InputHandler;
 
 import java.util.*;
 
@@ -56,7 +56,7 @@ public abstract class Manager {
         Action nextAction;
 
         if(agents.isEmpty()) {
-            System.out.println("ERROR: No Player-Agents in the game");
+            System.out.println("ERROR: No Player-com.edlforest.Game.Agents in the game");
             System.exit(1);
             return null;
         }

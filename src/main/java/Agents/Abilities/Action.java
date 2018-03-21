@@ -1,4 +1,4 @@
-package main.java.Agents.Abilities;
+package main.java.Agents.Actions;
 
 
 /**

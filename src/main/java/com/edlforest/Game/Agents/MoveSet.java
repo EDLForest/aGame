@@ -1,6 +1,5 @@
-package main.java.Agents;
+package com.edlforest.Game.Agents;
 
-import main.java.Agents.Abilities.Ability;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,9 +1,11 @@
-package main.java.Managers;
+package com.edlforest.Game.Managers;
 
-import main.java.Agents.Abilities.Action;
-import main.java.Agents.Agent;
+
+import com.edlforest.Game.Agents.Action;
+import com.edlforest.Game.Agents.Agent;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class BattleManager extends Manager{
 
@@ -16,7 +18,7 @@ public class BattleManager extends Manager{
      * The battle manager manages the flow of the turn based battle system.
      * Each manager should have a Thread in which they manages
      *
-     * @param agents, an ArrrayList of Agents
+     * @param agents, an ArrrayList of com.edlforest.Game.Agents
      */
     public BattleManager (ArrayList<Agent> agents){
         this.agents = agents;
@@ -24,7 +26,7 @@ public class BattleManager extends Manager{
     }
 
     /**
-     * Update the state of the game, including Agents' stats,
+     * Update the state of the game, including com.edlforest.Game.Agents' stats,
      * environment, etc.
      *
      * Also since the ArrayList of the agent
