@@ -1,18 +1,20 @@
 package com.edlforest.Game.States;
 
-public class BattleBaseMenuState extends BattleMenuState {
-    @Override
-    void displayToMenu() {
+import java.util.Scanner;
 
-    }
-
-    @Override
-    void setNextState() {
-
-    }
-
-    @Override
-    void expressState() {
-
-    }
+//public class BattleBaseMenuState extends BattleMenuState {
+//
+//    @Override
+//    void setNextState() {
+//        Scanner userIn = new Scanner(System.in);
+//        switch(userIn.next()){
+//            case "1":
+//                System.out.println("Option One");
+//        }
+//    }
+//
+//    @Override
+//    void expressState() {
+//        System.out.println("This is the root battle menu");
+//    }
 }

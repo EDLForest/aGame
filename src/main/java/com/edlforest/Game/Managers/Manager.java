@@ -9,11 +9,14 @@ import java.util.*;
 /**
  * This is a Manager class whose job is to manage the control flow of the game.
  * for example the battle manager shall manage the flow the battle, since this
- * game will be designed as a turn based game, we need to have a control flow.
+ * game will be designed as a turn based game, we need to have a turn based control flow.
  * the main game loop should also have a manager for control flow.
- * Think of the manager as the finite state diagram of a controller.
+ * Think of the manager as the finite state machine.
+ * The main manager should be equipped with a state machine,
+ * Which have broad, general States such as Adventure, Battle, Inventory, etc
  *
- * Every manager should have a Thread in which they manages. OR
+ * In each states,
+ *
  * Every game loop thread shall be instantiated with an appropriate manager.
  *
  * The game loop handles three important tasks:

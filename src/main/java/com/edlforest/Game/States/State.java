@@ -20,7 +20,7 @@ package com.edlforest.Game.States;
  */
 public abstract class State {
 
-    private State nextState;
+    protected State nextState;
 
     public State getNextState() {
         return nextState;
