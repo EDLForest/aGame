@@ -1,31 +1,19 @@
 package com.edlforest.Game.States;
 
 /**
- * In a finite state machine, every state have its own output or behavior.
+ * In a finite state machine, every state have its own output/behavior.
  * And know which state it should transition to next based on the input
  * of the user, the state of other objects in the game, and/or certain
- * criteria. The State Interface have a getNextState, which will determine
- * and return the next state that the current state will transition to.
- * Every state should have a nextState variable, which stores the nextState
- * that the current state would transition to next. The transition
- * The State should also be responsible for expressing the behavior of
- * the state itself.
- *      eg. A specific menuState should print specific menu options to the user
- *          A specific behaviorState should influence the Agent's behavior
- *              Such as aggressiveness, Statistics, and/or ability.
+ * criteria. Any state should have a reference to the StateMachine that
+ * the State belongs to and with this reference, each state should be able
+ * to modify the nextState of the state machine.
  *
- * TODO: The State interface also should be able to obtain user inputs(?)
- * Or should a manager of the state or a context of the state handle
- * the inputs and then pass it into the state?
+ * When in operation, the handleUserInput method will handle the user's input
+ * and determine which state the StateMachine should turn to next. and set the
+ * nextState of the StateMachine accordingly.
  */
-public abstract class State {
+public interface State {
 
-    protected State nextState;
-
-    public State getNextState() {
-        return nextState;
-    }
-
-    abstract void setNextState();
-    abstract void expressState();
+    void handleInput(StateMachine stateMachine);
+    void onEnter();
 }
