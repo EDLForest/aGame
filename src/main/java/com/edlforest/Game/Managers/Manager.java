@@ -59,7 +59,7 @@ public abstract class Manager {
         Action nextAction;
 
         if(agents.isEmpty()) {
-            System.out.println("ERROR: No Player-com.edlforest.Game.Agents in the game");
+            System.out.println("ERROR: No Agents in the game");
             System.exit(1);
             return null;
         }
