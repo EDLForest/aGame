@@ -9,11 +9,15 @@ package com.edlforest.Game.States;
  * to modify the nextState of the state machine.
  *
  * When in operation, the handleUserInput method will handle the user's input
- * and determine which state the StateMachine should turn to next. and set the
+ * and determine which state the StateMachine should turn to next, then set the
  * nextState of the StateMachine accordingly.
  */
 public interface State {
 
     void handleInput(StateMachine stateMachine);
     void onEnter();
+
+    //Tentative method, inspired by mealy style FSM, where output can be
+    //placed onto the transition between states instead on a certain state
+    void onLeave();
 }
